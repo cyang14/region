@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF87F87D-5720-49FD-B03F-48E5869CB89A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AslaWebsite</RootNamespace>
+    <AssemblyName>AslaWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap\bootstrap.css" />
+    <Content Include="css\bootstrap\bootstrap.min.css" />
+    <Content Include="css\index.html" />
+    <Content Include="css\theme_light.css" />
+    <Content Include="css\theme_light\calendar\fullcalendar.css" />
+    <Content Include="css\theme_light\calendar\fullcalendar.print.css" />
+    <Content Include="css\theme_light\calendar\index.html" />
+    <Content Include="css\theme_light\common.css" />
+    <Content Include="css\theme_light\filemanager\elfinder.min.css" />
+    <Content Include="css\theme_light\filemanager\index.html" />
+    <Content Include="css\theme_light\filemanager\theme.css" />
+    <Content Include="css\theme_light\fileupload\index.html" />
+    <Content Include="css\theme_light\fileupload\jquery.fileupload-ui.css" />
+    <Content Include="css\theme_light\filevalidation\index.html" />
+    <Content Include="css\theme_light\filevalidation\validationEngine.jquery.css" />
+    <Content Include="css\theme_light\formselements\chosen.css" />
+    <Content Include="css\theme_light\formselements\dropkick.css" />
+    <Content Include="css\theme_light\formselements\index.html" />
+    <Content Include="css\theme_light\formselements\jquery.ibutton.css" />
+    <Content Include="css\theme_light\formselements\multi-select.css" />
+    <Content Include="css\theme_light\forms\index.html" />
+    <Content Include="css\theme_light\forms\jquery.cleditor.css" />
+    <Content Include="css\theme_light\forms\jquery.plupload.queue.css" />
+    <Content Include="css\theme_light\forms\jquery.ui.plupload.css" />
+    <Content Include="css\theme_light\gallery\colorbox.css" />
+    <Content Include="css\theme_light\gallery\index.html" />
+    <Content Include="css\theme_light\icons\font-awesome-ie7.css" />
+    <Content Include="css\theme_light\icons\font-awesome.css" />
+    <Content Include="css\theme_light\index.html" />
+    <Content Include="css\theme_light\jquery-ui-1.8.20.custom.css" />
+    <Content Include="css\theme_light\prettify.css" />
+    <Content Include="css\theme_light\tables\dataTables.css" />
+    <Content Include="css\theme_light\tables\index.html" />
+    <Content Include="css\theme_light\tagedit\index.html" />
+    <Content Include="css\theme_light\tagedit\jquery.tagedit.css" />
+    <Content Include="css\theme_light\tooltips\index.html" />
+    <Content Include="css\theme_light\tooltips\jquery.cluetip.css" />
+    <Content Include="css\theme_light\widgets\calendar_dark.css" />
+    <Content Include="css\theme_light\widgets\calendar_default.css" />
+    <Content Include="css\theme_light\widgets\colorpicker.css" />
+    <Content Include="css\theme_light\widgets\index.html" />
+    <Content Include="css\theme_light\widgets\jquery.miniColors.css" />
+    <Content Include="css\theme_light_apple_green.css" />
+    <Content Include="css\theme_light_orange.css" />
+    <Content Include="css\theme_light_purple.css" />
+    <Content Include="css\theme_light_rose.css" />
+    <Content Include="css\theme_light_sky_blue.css" />
+    <Content Include="default.aspx" />
+    <Content Include="img\bg\bg_1.png" />
+    <Content Include="img\bg\bg_10.png" />
+    <Content Include="img\bg\bg_2.png" />
+    <Content Include="img\bg\bg_3.png" />
+    <Content Include="img\bg\bg_4.png" />
+    <Content Include="img\bg\bg_5.png" />
+    <Content Include="img\bg\bg_6.png" />
+    <Content Include="img\bg\bg_7.png" />
+    <Content Include="img\bg\bg_8.png" />
+    <Content Include="img\bg\bg_9.png" />
+    <Content Include="img\bg\content_bg.png" />
+    <Content Include="img\bg\content_bg_2.png" />
+    <Content Include="img\bg\content_bg_3.png" />
+    <Content Include="img\bg\content_bg_4.png" />
+    <Content Include="img\bg\content_bg_light.png" />
+    <Content Include="img\bg\content_bg_light_2.png" />
+    <Content Include="img\bg\content_bg_light_3.png" />
+    <Content Include="img\bg\content_bg_light_4.png" />
+    <Content Include="img\general\arrow.png" />
+    <Content Include="img\general\arrow_down.png" />
+    <Content Include="img\general\arrow_up.png" />
+    <Content Include="img\general\breadcrumb\Chevron.gif" />
+    <Content Include="img\general\breadcrumb\ChevronDark.png" />
+    <Content Include="img\general\breadcrumb\ChevronOverlay.png" />
+    <Content Include="img\general\breadcrumb\IconHome.gif" />
+    <Content Include="img\general\chat_users.png" />
+    <Content Include="img\general\filemanager\arrows-active.png" />
+    <Content Include="img\general\filemanager\arrows-normal.png" />
+    <Content Include="img\general\filemanager\crop.gif" />
+    <Content Include="img\general\filemanager\dialogs.png" />
+    <Content Include="img\general\filemanager\icons-big.png" />
+    <Content Include="img\general\filemanager\icons-small.png" />
+    <Content Include="img\general\filemanager\logo.png" />
+    <Content Include="img\general\filemanager\progress.gif" />
+    <Content Include="img\general\filemanager\quicklook-bg.png" />
+    <Content Include="img\general\filemanager\quicklook-icons.png" />
+    <Content Include="img\general\filemanager\resize.png" />
+    <Content Include="img\general\filemanager\spinner-mini.gif" />
+    <Content Include="img\general\filemanager\toolbar.png" />
+    <Content Include="img\general\formselements\chosen-sprite.png" />
+    <Content Include="img\general\formselements\dk_arrows.png" />
+    <Content Include="img\general\formselements\dk_arrows_white.png" />
+    <Content Include="img\general\formselements\ibutton-slider-default.png" />
+    <Content Include="img\general\formselements\ibutton-slider-giva-original.png" />
+    <Content Include="img\general\formselements\ibutton-slider-giva2.png" />
+    <Content Include="img\general\formselements\ibutton-slider-styled.png" />
+    <Content Include="img\general\formselements\switch.png" />
+    <Content Include="img\general\formselements\switch_down.png" />
+    <Content Include="img\general\forms\uploader\add.png" />
+    <Content Include="img\general\forms\uploader\backgrounds.gif" />
+    <Content Include="img\general\forms\uploader\Copy of uploadBg.png" />
+    <Content Include="img\general\forms\uploader\delete.png" />
+    <Content Include="img\general\forms\uploader\done.png" />
+    <Content Include="img\general\forms\uploader\error.png" />
+    <Content Include="img\general\forms\uploader\fail.png" />
+    <Content Include="img\general\forms\uploader\loading.gif" />
+    <Content Include="img\general\forms\uploader\plupload-bw.png" />
+    <Content Include="img\general\forms\uploader\plupload.png" />
+    <Content Include="img\general\forms\uploader\throbber.gif" />
+    <Content Include="img\general\forms\uploader\transp50.png" />
+    <Content Include="img\general\forms\uploader\upload.png" />
+    <Content Include="img\general\forms\uploader\uploadBg.png" />
+    <Content Include="img\general\forms\uploader\upload_disabled.png" />
+    <Content Include="img\general\forms\wysiwyg\buttons.gif" />
+    <Content Include="img\general\forms\wysiwyg\toolbar.gif" />
+    <Content Include="img\general\formwizard\loader.gif" />
+    <Content Include="img\general\gallery\border.png" />
+    <Content Include="img\general\gallery\controls - Copy.png" />
+    <Content Include="img\general\gallery\controls.png" />
+    <Content Include="img\general\gallery\ie6\borderBottomCenter.png" />
+    <Content Include="img\general\gallery\ie6\borderBottomLeft.png" />
+    <Content Include="img\general\gallery\ie6\borderBottomRight.png" />
+    <Content Include="img\general\gallery\ie6\borderMiddleLeft.png" />
+    <Content Include="img\general\gallery\ie6\borderMiddleRight.png" />
+    <Content Include="img\general\gallery\ie6\borderTopCenter.png" />
+    <Content Include="img\general\gallery\ie6\borderTopLeft.png" />
+    <Content Include="img\general\gallery\ie6\borderTopRight.png" />
+    <Content Include="img\general\gallery\loading.gif" />
+    <Content Include="img\general\gallery\loading_background.png" />
+    <Content Include="img\general\gallery\loading_old.gif" />
+    <Content Include="img\general\gallery\overlay.png" />
+    <Content Include="img\general\gallery\overlay_old.png" />
+    <Content Include="img\general\gallery\sprite_gallery_icon.png" />
+    <Content Include="img\general\go_to_front.png" />
+    <Content Include="img\general\go_to_front_.png" />
+    <Content Include="img\general\invoice\american_express.png" />
+    <Content Include="img\general\invoice\mastercard.png" />
+    <Content Include="img\general\invoice\paypal.png" />
+    <Content Include="img\general\invoice\visa.png" />
+    <Content Include="img\general\invoice\western_union.png" />
+    <Content Include="img\general\login\forgotpw.png" />
+    <Content Include="img\general\login\login.png" />
+    <Content Include="img\general\login\signup.png" />
+    <Content Include="img\general\login\sprite_login_icon.png" />
+    <Content Include="img\general\login\sprite_login_input_icon.png" />
+    <Content Include="img\general\logo.png" />
+    <Content Include="img\general\logo_dark.png" />
+    <Content Include="img\general\nav\chat.png" />
+    <Content Include="img\general\nav\mail.png" />
+    <Content Include="img\general\nav\notification.png" />
+    <Content Include="img\general\nav\search.png" />
+    <Content Include="img\general\nav\settings.png" />
+    <Content Include="img\general\nav\users.png" />
+    <Content Include="img\general\options.png" />
+    <Content Include="img\general\sliders\slider_header.png" />
+    <Content Include="img\general\sliders\slider_header_active.png" />
+    <Content Include="img\general\sliders\slider_header_hover.png" />
+    <Content Include="img\general\sprite_sidebar_icon.png" />
+    <Content Include="img\general\sprite_table.png" />
+    <Content Include="img\general\sprite_top_menu_icon.png" />
+    <Content Include="img\general\switch.png" />
+    <Content Include="img\general\table\back_disabled.png" />
+    <Content Include="img\general\table\back_enabled.png" />
+    <Content Include="img\general\table\back_enabled_hover.png" />
+    <Content Include="img\general\table\first_disabled.png" />
+    <Content Include="img\general\table\first_enabled.png" />
+    <Content Include="img\general\table\first_enabled_hover.png" />
+    <Content Include="img\general\table\forward_disabled.png" />
+    <Content Include="img\general\table\forward_enabled.png" />
+    <Content Include="img\general\table\forward_enabled_hover.png" />
+    <Content Include="img\general\table\last_disabled.png" />
+    <Content Include="img\general\table\last_enabled.png" />
+    <Content Include="img\general\table\last_enabled_hover.png" />
+    <Content Include="img\general\table\sort_asc.png" />
+    <Content Include="img\general\table\sort_asc_disabled.png" />
+    <Content Include="img\general\table\sort_asc_hover.png" />
+    <Content Include="img\general\table\sort_both.png" />
+    <Content Include="img\general\table\sort_both_hover.png" />
+    <Content Include="img\general\table\sort_desc.png" />
+    <Content Include="img\general\table\sort_desc_disabled.png" />
+    <Content Include="img\general\table\sort_desc_hover.png" />
+    <Content Include="img\general\tagedit\cross.png" />
+    <Content Include="img\general\tagedit\delete.png" />
+    <Content Include="img\general\tagedit\disc.png" />
+    <Content Include="img\general\tagedit\edit.png" />
+    <Content Include="img\general\tagedit\go.png" />
+    <Content Include="img\general\tagedit\mail.png" />
+    <Content Include="img\general\tagedit\tick.png" />
+    <Content Include="img\general\tagedit\undo.png" />
+    <Content Include="img\general\tooltips\arrowdown.gif" />
+    <Content Include="img\general\tooltips\arrowleft.gif" />
+    <Content Include="img\general\tooltips\arrowright.gif" />
+    <Content Include="img\general\tooltips\arrowup.gif" />
+    <Content Include="img\general\tooltips\bl.gif" />
+    <Content Include="img\general\tooltips\bl.png" />
+    <Content Include="img\general\tooltips\br.gif" />
+    <Content Include="img\general\tooltips\br.png" />
+    <Content Include="img\general\tooltips\darrowdown.gif" />
+    <Content Include="img\general\tooltips\darrowleft.gif" />
+    <Content Include="img\general\tooltips\darrowright.gif" />
+    <Content Include="img\general\tooltips\darrowup.gif" />
+    <Content Include="img\general\tooltips\itunes.png" />
+    <Content Include="img\general\tooltips\rarrowdown.gif" />
+    <Content Include="img\general\tooltips\rarrowleft.gif" />
+    <Content Include="img\general\tooltips\rarrowright.gif" />
+    <Content Include="img\general\tooltips\rarrowup.gif" />
+    <Content Include="img\general\tooltips\tl.gif" />
+    <Content Include="img\general\tooltips\tl.png" />
+    <Content Include="img\general\tooltips\tr.gif" />
+    <Content Include="img\general\tooltips\tr.png" />
+    <Content Include="img\general\tooltips\wait.gif" />
+    <Content Include="img\general\ui.totop.png" />
+    <Content Include="img\general\ui\pbar-ani.gif" />
+    <Content Include="img\general\ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="img\general\ui\ui-bg_flat_55_fafafa_40x100.png" />
+    <Content Include="img\general\ui\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="img\general\ui\ui-bg_flat_75_dadada_40x100.png" />
+    <Content Include="img\general\ui\ui-bg_flat_75_f3f3f3_40x100.png" />
+    <Content Include="img\general\ui\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="img\general\ui\ui-bg_flat_95_fef1ec_40x100.png" />
+    <Content Include="img\general\ui\ui-icons_454545_256x240.png" />
+    <Content Include="img\general\ui\ui-icons_737373_256x240.png" />
+    <Content Include="img\general\ui\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="img\general\user_1.jpg" />
+    <Content Include="img\general\user_2.jpg" />
+    <Content Include="img\general\widgets\colorpicker\blank.gif" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_background.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_hex.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_hsb_b.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_hsb_h.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_hsb_s.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_indic.gif" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_overlay.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_rgb_b.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_rgb_g.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_rgb_r.png" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_select.gif" />
+    <Content Include="img\general\widgets\colorpicker\colorpicker_submit.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_background.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_hex.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_hsb_b.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_hsb_h.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_hsb_s.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_indic.gif" />
+    <Content Include="img\general\widgets\colorpicker\custom_rgb_b.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_rgb_g.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_rgb_r.png" />
+    <Content Include="img\general\widgets\colorpicker\custom_submit.png" />
+    <Content Include="img\general\widgets\colorpicker\select.png" />
+    <Content Include="img\general\widgets\colorpicker\select2.png" />
+    <Content Include="img\general\widgets\colorpicker\slider.png" />
+    <Content Include="img\general\widgets\minicolors\colors.png" />
+    <Content Include="img\general\widgets\minicolors\trigger.png" />
+    <Content Include="img\icons\flagicons.png" />
+    <Content Include="img\icons\font\fontawesome-webfont.svg" />
+    <Content Include="img\icons\glyphicons-halflings-gray.png" />
+    <Content Include="img\icons\glyphicons-halflings-white.png" />
+    <Content Include="img\icons\glyphicons-halflings.png" />
+    <Content Include="img\icons\sweeticons.png" />
+    <Content Include="img\icons\sweeticons_gray.png" />
+    <Content Include="img\icons\sweeticons_white.png" />
+    <Content Include="img\index.html" />
+    <Content Include="img\loaders\108_d.gif" />
+    <Content Include="img\loaders\108_l.gif" />
+    <Content Include="img\loaders\131_d.gif" />
+    <Content Include="img\loaders\131_l.gif" />
+    <Content Include="img\loaders\220_d.gif" />
+    <Content Include="img\loaders\220_l.gif" />
+    <Content Include="img\loaders\252_d.gif" />
+    <Content Include="img\loaders\252_l.gif" />
+    <Content Include="img\loaders\253_d.gif" />
+    <Content Include="img\loaders\253_l.gif" />
+    <Content Include="img\loaders\255_d.gif" />
+    <Content Include="img\loaders\255_l.gif" />
+    <Content Include="img\loaders\257_d.gif" />
+    <Content Include="img\loaders\257_l.gif" />
+    <Content Include="img\loaders\25_d.gif" />
+    <Content Include="img\loaders\25_l.gif" />
+    <Content Include="img\loaders\263_d.gif" />
+    <Content Include="img\loaders\263_l.gif" />
+    <Content Include="img\loaders\282_d.gif" />
+    <Content Include="img\loaders\282_l.gif" />
+    <Content Include="img\loaders\284_d.gif" />
+    <Content Include="img\loaders\284_l.gif" />
+    <Content Include="img\loaders\285_d.gif" />
+    <Content Include="img\loaders\285_l.gif" />
+    <Content Include="img\loaders\287_d.gif" />
+    <Content Include="img\loaders\287_l.gif" />
+    <Content Include="img\loaders\292_d.gif" />
+    <Content Include="img\loaders\292_l.gif" />
+    <Content Include="img\loaders\295_d.gif" />
+    <Content Include="img\loaders\295_l.gif" />
+    <Content Include="img\loaders\301_d.gif" />
+    <Content Include="img\loaders\301_l.gif" />
+    <Content Include="img\loaders\325_d.gif" />
+    <Content Include="img\loaders\325_l.gif" />
+    <Content Include="img\loaders\328_d.gif" />
+    <Content Include="img\loaders\328_l.gif" />
+    <Content Include="img\loaders\334_d.gif" />
+    <Content Include="img\loaders\334_l.gif" />
+    <Content Include="img\loaders\335_d.gif" />
+    <Content Include="img\loaders\335_l.gif" />
+    <Content Include="img\loaders\3_d.gif" />
+    <Content Include="img\loaders\3_l.gif" />
+    <Content Include="img\loaders\76_d.gif" />
+    <Content Include="img\loaders\76_l.gif" />
+    <Content Include="img\loaders\89_d.gif" />
+    <Content Include="img\loaders\89_l.gif" />
+    <Content Include="img\loaders\page_loader.gif" />
+    <Content Include="img\sample\gallery\preview\sample_1.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_10.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_2.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_3.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_4.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_5.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_6.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_7.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_8.jpg" />
+    <Content Include="img\sample\gallery\preview\sample_9.jpg" />
+    <Content Include="img\sample\gallery\sample_1.jpg" />
+    <Content Include="img\sample\gallery\sample_10.jpg" />
+    <Content Include="img\sample\gallery\sample_2.jpg" />
+    <Content Include="img\sample\gallery\sample_3.jpg" />
+    <Content Include="img\sample\gallery\sample_4.jpg" />
+    <Content Include="img\sample\gallery\sample_5.jpg" />
+    <Content Include="img\sample\gallery\sample_6.jpg" />
+    <Content Include="img\sample\gallery\sample_7.jpg" />
+    <Content Include="img\sample\gallery\sample_8.jpg" />
+    <Content Include="img\sample\gallery\sample_9.jpg" />
+    <Content Include="img\sample\options\bg_1.png" />
+    <Content Include="img\sample\options\bg_10.png" />
+    <Content Include="img\sample\options\bg_2.png" />
+    <Content Include="img\sample\options\bg_3.png" />
+    <Content Include="img\sample\options\bg_4.png" />
+    <Content Include="img\sample\options\bg_5.png" />
+    <Content Include="img\sample\options\bg_6.png" />
+    <Content Include="img\sample\options\bg_7.png" />
+    <Content Include="img\sample\options\bg_8.png" />
+    <Content Include="img\sample\options\bg_9.png" />
+    <Content Include="img\sample\options\p_1.png" />
+    <Content Include="img\sample\options\p_2.png" />
+    <Content Include="img\sample\options\p_3.png" />
+    <Content Include="img\sample\options\p_4.png" />
+    <Content Include="img\sep\general_sep.png" />
+    <Content Include="img\sep\nav_sep.png" />
+    <Content Include="img\sep\subnav_sep.png" />
+    <Content Include="img\sep\widget_sep.png" />
+    <Content Include="img\theme\apple_green\arrow.png" />
+    <Content Include="img\theme\apple_green\chat_users.png" />
+    <Content Include="img\theme\apple_green\login\sprite_login_icon.png" />
+    <Content Include="img\theme\apple_green\login\sprite_login_input_icon.png" />
+    <Content Include="img\theme\apple_green\nav\chat.png" />
+    <Content Include="img\theme\apple_green\nav\mail.png" />
+    <Content Include="img\theme\apple_green\nav\notification.png" />
+    <Content Include="img\theme\apple_green\nav\search.png" />
+    <Content Include="img\theme\apple_green\nav\settings.png" />
+    <Content Include="img\theme\apple_green\nav\users.png" />
+    <Content Include="img\theme\apple_green\sprite_sidebar_icon.png" />
+    <Content Include="img\theme\apple_green\sprite_table.png" />
+    <Content Include="img\theme\apple_green\sprite_top_menu_icon.png" />
+    <Content Include="img\theme\apple_green\sweeticons.png" />
+    <Content Include="img\theme\apple_green\switch.png" />
+    <Content Include="img\theme\orange\arrow.png" />
+    <Content Include="img\theme\orange\chat_users.png" />
+    <Content Include="img\theme\orange\login\sprite_login_icon.png" />
+    <Content Include="img\theme\orange\login\sprite_login_input_icon.png" />
+    <Content Include="img\theme\orange\nav\chat.png" />
+    <Content Include="img\theme\orange\nav\mail.png" />
+    <Content Include="img\theme\orange\nav\notification.png" />
+    <Content Include="img\theme\orange\nav\search.png" />
+    <Content Include="img\theme\orange\nav\settings.png" />
+    <Content Include="img\theme\orange\nav\users.png" />
+    <Content Include="img\theme\orange\sprite_sidebar_icon.png" />
+    <Content Include="img\theme\orange\sprite_table.png" />
+    <Content Include="img\theme\orange\sprite_top_menu_icon.png" />
+    <Content Include="img\theme\orange\sweeticons.png" />
+    <Content Include="img\theme\orange\switch.png" />
+    <Content Include="img\theme\purple\arrow.png" />
+    <Content Include="img\theme\purple\chat_users.png" />
+    <Content Include="img\theme\purple\login\sprite_login_icon.png" />
+    <Content Include="img\theme\purple\login\sprite_login_input_icon.png" />
+    <Content Include="img\theme\purple\nav\chat.png" />
+    <Content Include="img\theme\purple\nav\mail.png" />
+    <Content Include="img\theme\purple\nav\notification.png" />
+    <Content Include="img\theme\purple\nav\search.png" />
+    <Content Include="img\theme\purple\nav\settings.png" />
+    <Content Include="img\theme\purple\nav\users.png" />
+    <Content Include="img\theme\purple\sprite_sidebar_icon.png" />
+    <Content Include="img\theme\purple\sprite_table.png" />
+    <Content Include="img\theme\purple\sprite_top_menu_icon.png" />
+    <Content Include="img\theme\purple\sweeticons.png" />
+    <Content Include="img\theme\purple\switch.png" />
+    <Content Include="img\theme\rose\arrow.png" />
+    <Content Include="img\theme\rose\chat_users.png" />
+    <Content Include="img\theme\rose\login\sprite_login_icon.png" />
+    <Content Include="img\theme\rose\login\sprite_login_input_icon.png" />
+    <Content Include="img\theme\rose\nav\chat.png" />
+    <Content Include="img\theme\rose\nav\mail.png" />
+    <Content Include="img\theme\rose\nav\notification.png" />
+    <Content Include="img\theme\rose\nav\search.png" />
+    <Content Include="img\theme\rose\nav\settings.png" />
+    <Content Include="img\theme\rose\nav\users.png" />
+    <Content Include="img\theme\rose\sprite_sidebar_icon.png" />
+    <Content Include="img\theme\rose\sprite_table.png" />
+    <Content Include="img\theme\rose\sprite_top_menu_icon.png" />
+    <Content Include="img\theme\rose\sweeticons.png" />
+    <Content Include="img\theme\rose\switch.png" />
+    <Content Include="img\theme\sky_blue\arrow.png" />
+    <Content Include="img\theme\sky_blue\chat_users.png" />
+    <Content Include="img\theme\sky_blue\login\sprite_login_icon.png" />
+    <Content Include="img\theme\sky_blue\login\sprite_login_input_icon.png" />
+    <Content Include="img\theme\sky_blue\nav\chat.png" />
+    <Content Include="img\theme\sky_blue\nav\mail.png" />
+    <Content Include="img\theme\sky_blue\nav\notification.png" />
+    <Content Include="img\theme\sky_blue\nav\search.png" />
+    <Content Include="img\theme\sky_blue\nav\settings.png" />
+    <Content Include="img\theme\sky_blue\nav\users.png" />
+    <Content Include="img\theme\sky_blue\sprite_sidebar_icon.png" />
+    <Content Include="img\theme\sky_blue\sprite_table.png" />
+    <Content Include="img\theme\sky_blue\sprite_top_menu_icon.png" />
+    <Content Include="img\theme\sky_blue\sweeticons.png" />
+    <Content Include="img\theme\sky_blue\switch.png" />
+    <Content Include="img\uniform\bg-input-focus.png" />
+    <Content Include="img\uniform\bg-input.png" />
+    <Content Include="img\uniform\sprite.png" />
+    <Content Include="js\common.js" />
+    <Content Include="js\index.html" />
+    <Content Include="js\libs\bootstrap.js" />
+    <Content Include="js\libs\bootstrap.min.js" />
+    <Content Include="js\libs\html5.js" />
+    <Content Include="js\libs\index.html" />
+    <Content Include="js\libs\ios-orientationchange-fix.js" />
+    <Content Include="js\libs\jquery-1.7.2.min.js" />
+    <Content Include="js\libs\jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="js\libs\prettify.js" />
+    <Content Include="js\plugins\breadcrumbs\index.html" />
+    <Content Include="js\plugins\breadcrumbs\jquery.jBreadCrumb.1.1.js" />
+    <Content Include="js\plugins\calendar\fullcalendar.min.js" />
+    <Content Include="js\plugins\calendar\index.html" />
+    <Content Include="js\plugins\charts\excanvas.js" />
+    <Content Include="js\plugins\charts\excanvas.min.js" />
+    <Content Include="js\plugins\charts\index.html" />
+    <Content Include="js\plugins\charts\jquery.colorhelpers.js" />
+    <Content Include="js\plugins\charts\jquery.colorhelpers.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.crosshair.js" />
+    <Content Include="js\plugins\charts\jquery.flot.crosshair.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.fillbetween.js" />
+    <Content Include="js\plugins\charts\jquery.flot.fillbetween.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.image.js" />
+    <Content Include="js\plugins\charts\jquery.flot.image.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.js" />
+    <Content Include="js\plugins\charts\jquery.flot.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.navigate.js" />
+    <Content Include="js\plugins\charts\jquery.flot.navigate.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.pie.js" />
+    <Content Include="js\plugins\charts\jquery.flot.pie.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.resize.js" />
+    <Content Include="js\plugins\charts\jquery.flot.resize.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.selection.js" />
+    <Content Include="js\plugins\charts\jquery.flot.selection.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.stack.js" />
+    <Content Include="js\plugins\charts\jquery.flot.stack.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.symbol.js" />
+    <Content Include="js\plugins\charts\jquery.flot.symbol.min.js" />
+    <Content Include="js\plugins\charts\jquery.flot.threshold.js" />
+    <Content Include="js\plugins\charts\jquery.flot.threshold.min.js" />
+    <Content Include="js\plugins\filemanager\elfinder.min.js" />
+    <Content Include="js\plugins\filemanager\index.html" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.ar.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.bg.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.ca.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.cs.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.de.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.es.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.fr.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.hu.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.jp.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.LANG.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.nl.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.no.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.pl.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.pt_BR.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.ru.js" />
+    <Content Include="js\plugins\filemanager\lang\elfinder.zh_CN.js" />
+    <Content Include="js\plugins\fileupload\index.html" />
+    <Content Include="js\plugins\fileupload\jquery.fileupload-fp.js" />
+    <Content Include="js\plugins\fileupload\jquery.fileupload-ui.js" />
+    <Content Include="js\plugins\fileupload\jquery.fileupload.js" />
+    <Content Include="js\plugins\fileupload\jquery.iframe-transport.js" />
+    <Content Include="js\plugins\fileupload\locale.js" />
+    <Content Include="js\plugins\fileupload\main.js" />
+    <Content Include="js\plugins\filevalidation\index.html" />
+    <Content Include="js\plugins\filevalidation\jquery.validationEngine.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-cz.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-da.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-de.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-en.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-es.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-et.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-fa.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-fi.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-fr.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-hr.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-hu.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-it.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-ja.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-nl.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-no.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-pl.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-pt.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-pt_BR.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-ro.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-ru.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-se.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-tr.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-vi.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-zh_CN.js" />
+    <Content Include="js\plugins\filevalidation\languages\jquery.validationEngine-zh_TW.js" />
+    <Content Include="js\plugins\formselements\chosen.jquery.min.js" />
+    <Content Include="js\plugins\formselements\index.html" />
+    <Content Include="js\plugins\formselements\jquery.autogrowtextarea.js" />
+    <Content Include="js\plugins\formselements\jquery.dropkick-1.0.0.js" />
+    <Content Include="js\plugins\formselements\jquery.ibutton.min.js" />
+    <Content Include="js\plugins\formselements\jquery.maskedinput-1.3.min.js" />
+    <Content Include="js\plugins\formselements\jquery.metadata.js" />
+    <Content Include="js\plugins\formselements\jquery.multi-select.js" />
+    <Content Include="js\plugins\formselements\jquery.quicksearch.js" />
+    <Content Include="js\plugins\formselements\jquery.textareaCounter.plugin.js" />
+    <Content Include="js\plugins\formselements\scrollability.min.js" />
+    <Content Include="js\plugins\formselements\ui.spinner.min.js" />
+    <Content Include="js\plugins\formswizard\jquery.smartWizard-2.0.min.js" />
+    <Content Include="js\plugins\forms\fileuploader.js" />
+    <Content Include="js\plugins\forms\index.html" />
+    <Content Include="js\plugins\forms\jquery.cleditor.min.js" />
+    <Content Include="js\plugins\forms\jquery.plupload.queue.js" />
+    <Content Include="js\plugins\forms\jquery.ui.plupload.js" />
+    <Content Include="js\plugins\forms\lang\cs.js" />
+    <Content Include="js\plugins\forms\lang\da.js" />
+    <Content Include="js\plugins\forms\lang\de.js" />
+    <Content Include="js\plugins\forms\lang\el.js" />
+    <Content Include="js\plugins\forms\lang\es.js" />
+    <Content Include="js\plugins\forms\lang\et.js" />
+    <Content Include="js\plugins\forms\lang\fa.js" />
+    <Content Include="js\plugins\forms\lang\fi.js" />
+    <Content Include="js\plugins\forms\lang\fr-ca.js" />
+    <Content Include="js\plugins\forms\lang\fr.js" />
+    <Content Include="js\plugins\forms\lang\hr.js" />
+    <Content Include="js\plugins\forms\lang\hu.js" />
+    <Content Include="js\plugins\forms\lang\it.js" />
+    <Content Include="js\plugins\forms\lang\ja.js" />
+    <Content Include="js\plugins\forms\lang\ko.js" />
+    <Content Include="js\plugins\forms\lang\lv.js" />
+    <Content Include="js\plugins\forms\lang\nl.js" />
+    <Content Include="js\plugins\forms\lang\pl.js" />
+    <Content Include="js\plugins\forms\lang\pt-br.js" />
+    <Content Include="js\plugins\forms\lang\ro.js" />
+    <Content Include="js\plugins\forms\lang\ru.js" />
+    <Content Include="js\plugins\forms\lang\sr.js" />
+    <Content Include="js\plugins\forms\lang\sv.js" />
+    <Content Include="js\plugins\forms\plupload.browserplus.js" />
+    <Content Include="js\plugins\forms\plupload.flash.js" />
+    <Content Include="js\plugins\forms\plupload.flash.swf" />
+    <Content Include="js\plugins\forms\plupload.full.js" />
+    <Content Include="js\plugins\forms\plupload.gears.js" />
+    <Content Include="js\plugins\forms\plupload.html4.js" />
+    <Content Include="js\plugins\forms\plupload.html5.js" />
+    <Content Include="js\plugins\forms\plupload.js" />
+    <Content Include="js\plugins\forms\plupload.silverlight.js" />
+    <Content Include="js\plugins\forms\plupload.silverlight.xap" />
+    <Content Include="js\plugins\gallery\index.html" />
+    <Content Include="js\plugins\gallery\jquery.colorbox-min.js" />
+    <Content Include="js\plugins\gallery\jquery.colorbox.js" />
+    <Content Include="js\plugins\index.html" />
+    <Content Include="js\plugins\tables\colResizable-1.3.min.js" />
+    <Content Include="js\plugins\tables\dataTables.scroller.min.js" />
+    <Content Include="js\plugins\tables\index.html" />
+    <Content Include="js\plugins\tables\jquery.dataTables.min.js" />
+    <Content Include="js\plugins\tables\jquery.tablesorter.min.js" />
+    <Content Include="js\plugins\tagedit\index.html" />
+    <Content Include="js\plugins\tagedit\jquery.autoGrowInput.js" />
+    <Content Include="js\plugins\tagedit\jquery.tagedit.js" />
+    <Content Include="js\plugins\tooltips\index.html" />
+    <Content Include="js\plugins\tooltips\jquery.cluetip.all.min.js" />
+    <Content Include="js\plugins\widgets\colorpicker.js" />
+    <Content Include="js\plugins\widgets\glDatePicker.min.js" />
+    <Content Include="js\plugins\widgets\index.html" />
+    <Content Include="js\plugins\widgets\jquery-ui-sliderAccess.js" />
+    <Content Include="js\plugins\widgets\jquery-ui-timepicker-addon.js" />
+    <Content Include="js\plugins\widgets\jquery.knob.js" />
+    <Content Include="js\plugins\widgets\jquery.miniColors.min.js" />
+    <Content Include="js\plugins\widgets\jquery.sparkline.min.js" />
+    <Content Include="js\plugins\widgets\slidernav-min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\specific\accordions.js" />
+    <Content Include="js\specific\breadcrumbs.js" />
+    <Content Include="js\specific\buttons_icons.js" />
+    <Content Include="js\specific\calendar.js" />
+    <Content Include="js\specific\charts.js" />
+    <Content Include="js\specific\file_manager.js" />
+    <Content Include="js\specific\file_validation.js" />
+    <Content Include="js\specific\forms_elements.js" />
+    <Content Include="js\specific\forms_layout.js" />
+    <Content Include="js\specific\forms_uploader.js" />
+    <Content Include="js\specific\forms_wizard.js" />
+    <Content Include="js\specific\gallery.js" />
+    <Content Include="js\specific\index.html" />
+    <Content Include="js\specific\index.js" />
+    <Content Include="js\specific\login.js" />
+    <Content Include="js\specific\mail.js" />
+    <Content Include="js\specific\misc.js" />
+    <Content Include="js\specific\profile.js" />
+    <Content Include="js\specific\progressbars.js" />
+    <Content Include="js\specific\search.js" />
+    <Content Include="js\specific\sliders.js" />
+    <Content Include="js\specific\sparks.js" />
+    <Content Include="js\specific\tables_advanced.js" />
+    <Content Include="js\specific\tables_basic.js" />
+    <Content Include="js\specific\tabs.js" />
+    <Content Include="js\specific\tooltips_popovers.js" />
+    <Content Include="js\specific\typography.js" />
+    <Content Include="js\specific\widgets.js" />
+    <Content Include="Region.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASLAControl.Master.cs">
+      <DependentUpon>ASLAControl.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASLAControl.Master.designer.cs">
+      <DependentUpon>ASLAControl.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.aspx.cs">
+      <DependentUpon>Region.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Region.aspx.designer.cs">
+      <DependentUpon>Region.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASLAControl.Master" />
+    <Content Include="img\general\filemanager\Thumbs.db" />
+    <Content Include="img\general\forms\uploader\Thumbs.db" />
+    <Content Include="img\general\forms\wysiwyg\Thumbs.db" />
+    <Content Include="img\general\gallery\ie6\Thumbs.db" />
+    <Content Include="img\general\gallery\Thumbs.db" />
+    <Content Include="img\general\nav\Thumbs.db" />
+    <Content Include="img\general\table\Thumbs.db" />
+    <Content Include="img\general\Thumbs.db" />
+    <Content Include="img\icons\font\fontawesome-webfont.eot" />
+    <Content Include="img\icons\font\fontawesome-webfont.ttf" />
+    <Content Include="img\icons\font\fontawesome-webfont.woff" />
+    <Content Include="img\sample\gallery\preview\Thumbs.db" />
+    <Content Include="img\sample\gallery\Thumbs.db" />
+    <Content Include="img\sep\Thumbs.db" />
+    <Content Include="img\theme\purple\nav\Thumbs.db" />
+    <Content Include="img\theme\sky_blue\nav\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54591/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

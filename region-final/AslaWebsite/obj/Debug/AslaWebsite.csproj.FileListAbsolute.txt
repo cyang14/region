@@ -1,0 +1,15 @@
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaWebsite\bin\AslaWebsite.dll
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaWebsite\bin\AslaWebsite.pdb
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaWebsite\obj\Debug\AslaWebsite.csprojResolveAssemblyReference.cache
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaWebsite\obj\Debug\AslaWebsite.dll
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaWebsite\obj\Debug\AslaWebsite.pdb
+C:\Users\cyang14\Desktop\asla\AslaWebsite\obj\Debug\AslaWebsite.csprojResolveAssemblyReference.cache
+C:\Users\cyang14\Desktop\asla\AslaWebsite\obj\Debug\AslaWebsite.dll
+C:\Users\cyang14\Desktop\asla\AslaWebsite\bin\AslaWebsite.dll
+C:\Users\cyang14\Desktop\asla\AslaWebsite\bin\AslaWebsite.pdb
+C:\Users\cyang14\Desktop\asla\AslaWebsite\obj\Debug\AslaWebsite.pdb
+C:\Users\cyang14\Desktop\region-final\AslaWebsite\bin\AslaWebsite.dll
+C:\Users\cyang14\Desktop\region-final\AslaWebsite\bin\AslaWebsite.pdb
+C:\Users\cyang14\Desktop\region-final\AslaWebsite\obj\Debug\AslaWebsite.csprojResolveAssemblyReference.cache
+C:\Users\cyang14\Desktop\region-final\AslaWebsite\obj\Debug\AslaWebsite.dll
+C:\Users\cyang14\Desktop\region-final\AslaWebsite\obj\Debug\AslaWebsite.pdb

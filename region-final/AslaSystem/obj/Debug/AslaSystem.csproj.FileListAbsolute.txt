@@ -1,0 +1,13 @@
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaSystem\bin\Debug\AslaSystem.dll
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaSystem\bin\Debug\AslaSystem.pdb
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaSystem\obj\Debug\AslaSystem.csprojResolveAssemblyReference.cache
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaSystem\obj\Debug\AslaSystem.dll
+C:\Users\Tikuf\Dropbox\Code Box\Visual Studio\asla\AslaSystem\obj\Debug\AslaSystem.pdb
+C:\Users\cyang14\Desktop\asla\AslaSystem\bin\Debug\AslaSystem.dll.config
+C:\Users\cyang14\Desktop\asla\AslaSystem\bin\Debug\AslaSystem.dll
+C:\Users\cyang14\Desktop\asla\AslaSystem\bin\Debug\AslaSystem.pdb
+C:\Users\cyang14\Desktop\asla\AslaSystem\bin\Debug\EntityFramework.dll
+C:\Users\cyang14\Desktop\asla\AslaSystem\bin\Debug\EntityFramework.xml
+C:\Users\cyang14\Desktop\asla\AslaSystem\obj\Debug\AslaSystem.csprojResolveAssemblyReference.cache
+C:\Users\cyang14\Desktop\asla\AslaSystem\obj\Debug\AslaSystem.dll
+C:\Users\cyang14\Desktop\asla\AslaSystem\obj\Debug\AslaSystem.pdb
